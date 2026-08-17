@@ -29,7 +29,7 @@ allowed-tools:
 
 ```json
 {
-  "cities": ["Taipei", "Dubai", "Tokyo", "Seoul"],
+  "cities": ["Taipei", "Dubai", "Tokyo", "Seoul", "Bangkok"],
   "thresholds": {
     "heat_wave": 35,
     "cold_warning": 0
