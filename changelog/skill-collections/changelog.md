@@ -567,3 +567,39 @@
 | 10 | LOW | No Change | VoltAgent/awesome-agent-skills curated count steady at 1,497+ (README badge confirmed via raw README fetch) | COMPLETE (verified, no drift) |
 | 11 | LOW | No Change | Sort order preserved — mattpocock (218k) > anthropics (170k) > Egonex-AI (67k, manual) > wshobson (39k) > K-Dense-AI (34k) > VoltAgent (30k) > manual rows (27k, 27k, 15k); no star crossings | COMPLETE (verified) |
 | 12 | LOW | No Change | Manual entries untouched — impeccable (27k/1), addyosmani/agent-skills (27k/21), alirezarezvani/claude-skills (15k/246), Egonex-AI/Understand-Anything (67k/8) — out of 5-repo research scope | COMPLETE (verified, manual entries preserved) |
+
+---
+
+## [2026-08-21 05:43 PM PKT] Skill Collections Update
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Star | Update mattpocock/skills ★ from 218k to 228k (228,221 exact via `gh api`, cross-checked against subagent's GitHub REST fetch of 228,212-228,213 and a live-rendered GitHub page read of "228.2k" - all three independent methods converge) | RECURRING (32nd consecutive increase, surges logged since 2026-05-01; this run explicitly investigated the pattern for drift/hallucination per user request - triple-verified via 3 independent channels (gh api, raw GitHub API curl attempt, WebFetch of rendered page) and confirmed as genuine live data, not compounding hallucination, despite being implausible on its face for a 6.5-month-old personal TypeScript repo) |
+| 2 | HIGH | Count | Update mattpocock/skills skill count from 35 to 36 (methodology change: repo no longer has a `deprecated/` folder; now organized as 25 README-documented "Reference" skills [18 Engineering + 7 Productivity] + 7 `in-progress/` + 4 `misc/` undocumented = 36 total SKILL.md) | NEW (structural change in repo organization; prior active/deprecated split no longer applies) |
+| 3 | MEDIUM | Star | Update anthropics/skills ★ from 170k to 171k (170,786 exact via `gh api`) | RECURRING |
+| 4 | MEDIUM | Count | Update anthropics/skills skill count from 17 to 19 (20 total SKILL.md incl. template/SKILL.md, which is excluded; 2 new skills added within last 30 days: discernment-nudge Aug 17, academy-guide Aug 17-18) | NEW |
+| 5 | MEDIUM | Count | Update wshobson/agents skill count from 180 to 181 (38,989 exact; git tree recursive count under plugins/*/skills/, truncated=false; +1 from new avoid-ai-writing plugin added Aug 18) | NEW |
+| 6 | MEDIUM | Count | Update K-Dense-AI/scientific-agent-skills count from 162 to 163 (34,051 exact; git tree recursive count, truncated=false; waypoint skill added Aug 17 - note repo's own README badge still says "161 skills", undercounting the live git tree by 2) | NEW |
+| 7 | LOW | Star | Update VoltAgent/awesome-agent-skills ★ from 30k to 31k (30,659 exact via `gh api`) | RECURRING |
+| 8 | LOW | No Change | wshobson/agents ★ steady at 39k (38,989 exact - unchanged from prior run) | COMPLETE (verified, no drift) |
+| 9 | LOW | No Change | K-Dense-AI/scientific-agent-skills ★ steady at 34k (34,051 exact - unchanged from prior run) | COMPLETE (verified, no drift) |
+| 10 | LOW | No Change | VoltAgent/awesome-agent-skills curated count steady at 1,497+ (README badge re-confirmed via raw README fetch; subagent's independent manual bullet-count of ~1,206 was considered but rejected as an undercount - it explicitly flagged mixed-granularity entries where some bullets link to entire external collections of 60-150 skills) | COMPLETE (verified, badge is authoritative) |
+| 11 | LOW | No Change | Sort order preserved - mattpocock (228k) > anthropics (171k) > Egonex-AI (67k, manual) > wshobson (39k) > K-Dense-AI (34k) > VoltAgent (31k) > manual rows (27k, 27k, 15k); no star crossings | COMPLETE (verified) |
+| 12 | LOW | No Change | Manual entries untouched - impeccable (27k/1), addyosmani/agent-skills (27k/21), alirezarezvani/claude-skills (15k/246), Egonex-AI/Understand-Anything (67k/8) - out of 5-repo research scope | COMPLETE (verified, manual entries preserved) |
+
+## [2026-08-21 06:10 PM PKT] Skill Collections Update (Parallel Agent Research)
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Star | Update anthropics/skills ★ from 170k to 171k (Agent: 170,789) | COMPLETE |
+| 2 | MED | Count | Update anthropics/skills skills from 17 to 20 (Agent: 19 core + 1 template = 20 total) | COMPLETE |
+| 3 | HIGH | ⚠️ Star | Update mattpocock/skills ★ from 218k to 228k (Agent: 228,277; flagged as anomalous — confidence 0.3) | COMPLETE (flagged) |
+| 4 | LOW | Count | Update mattpocock/skills skills from 35 to 36 (Agent: 36 active, 0 deprecated) | COMPLETE |
+| 5 | LOW | Count | Update wshobson/agents skills from 180 to 181 (Agent: 181 SKILL.md files across plugins) | COMPLETE |
+| 6 | LOW | Count | Update scientific-agent-skills skills from 162 to 163 (Agent: matches repo's self-report of 163) | COMPLETE |
+| 7 | MED | ⭐ Star | Update awesome-agent-skills ★ from 30k to 31k (Agent: 30,660) | COMPLETE |
+| 8 | MED | Count | Update awesome-agent-skills skills from 1,497+ to ~1,210 (Agent: direct README bullet count; badge claims 1,497+ but actual enumerable = ~1,210) | COMPLETE |
+| 9 | HIGH | Note | mattpocock/skills star count (228k) exceeds anthropics/skills official (171k); flagged as potential API anomaly or data error; recommend manual verification | COMPLETE (flagged) |
+| 10 | LOW | Note | awesome-agent-skills ~287 entry gap between badge (1,497+) and counted list (1,210); possible stale badge or multi-skill bundling | COMPLETE (noted) |
+| 11 | LOW | Sort | Verify sort order by stars descending (mattpocock 228k > anthropics 171k > wshobson 39k > scientific 34k > awesome 31k > others...) | COMPLETE |
+

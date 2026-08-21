@@ -2380,3 +2380,27 @@
 | 8 | HIGH | Star | Verify star counts for all 11 repos via completed agents | ON HOLD (HTML scraping confidence 0.5; API blocked 403; gh CLI missing; MCP restricted; never-fall rule applied; all stars unchanged) |
 | 9 | LOW | Workflow | Workflow changes proposed by both agents for multiple repos (ECC, omc, OpenSpec, Superpowers, Matt Pocock) | ON HOLD (RECURRING — established baselines kept) |
 | 10 | LOW | Sort | Re-sort by stars descending | INVALID (star counts unchanged, sort order unchanged) |
+
+## [2026-08-21 05:47 PM PKT] Development Workflows Update (Parallel Agent Research)
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Star | Update Superpowers ★ from 274k to 275k (Agent 1: 275,360) | COMPLETE |
+| 2 | HIGH | Star | Update Everything Claude Code ★ from 241k to 242k (Agent 1: 241,606) | COMPLETE |
+| 3 | HIGH | Star | Update Matt Pocock Skills ★ from 224k to 228k (Agent 1: 228,212) | COMPLETE |
+| 4 | HIGH | Star | Update Spec Kit ★ from 130k to 131k (Agent 1: 130,628) | COMPLETE |
+| 5 | MED | Count | Update oh-my-claudecode commands from 0 to 28 (Agent 2: found 28 .md files in commands/ at root) | COMPLETE |
+| 6 | MED | Count | Update oh-my-claudecode skills from 45 to 41 (Agent 2: 41 skill folders at root per v4.15.10) | COMPLETE |
+| 7 | MED | Count | Update gstack skills from 61 to 53 (Agent 2: full recursive git-tree scan found 53 SKILL.md folders; prior estimate overstated) | COMPLETE |
+| 8 | MED | Count | Update BMAD-METHOD skills from 47 to 49 (Agent 2: 5 agents + 44 support skills = 49 total in src/bmm-skills/ + src/core-skills/) | COMPLETE |
+| 9 | MED | Star | Update HumanLayer ★ from 11.3k to 11k (Agent 2: 11,306 → rounded) | COMPLETE |
+| 10 | MED | Count | Update HumanLayer commands from 27 to 26 (Agent 2: directory enumeration found 26 core files in .claude/commands/) | COMPLETE |
+| 11 | MED | Star | Update Compound Engineering ★ from 24.4k to 24k (Agent 2: 24,417 → rounded) | COMPLETE |
+| 12 | LOW | Star | Verify OpenSpec ★ 66k (Agent 2: 65,775 confirmed) | COMPLETE |
+| 13 | LOW | Star | Verify GSD ★ 65k (Agent 2: 64,665 confirmed; archived Jun 26 2026) | COMPLETE |
+| 14 | LOW | Note | GSD repository is ARCHIVED; all development moved to open-gsd/gsd-core; counts frozen at last push 2026-05-31 | COMPLETE (for reference) |
+| 15 | LOW | Note | HumanLayer repository is DEPRECATED per README stub; codebase development ceased Jun 2026 | COMPLETE (for reference) |
+| 16 | LOW | Note | oh-my-claudecode workflow major change: v4.1.7 made Team the canonical orchestration surface; legacy "swarm" removed; v4.4.0 removed Codex/Gemini MCP in favor of CLI-first tmux workers | COMPLETE (for reference) |
+| 17 | LOW | Sort | Re-sort table by stars descending (Superpowers 275k > ECC 242k > Matt Pocock 228k > Spec Kit 131k > gstack 129k > agent-skills 89k > OpenSpec 66k > GSD 65k > BMAD 52k > omc 39k > CE 24k > HumanLayer 11k) | COMPLETE |
+| 18 | LOW | Note | agent-skills (addyosmani, 89k) remains OUT OF SCOPE — not part of the 11-repo mandate | COMPLETE (for reference) |
+

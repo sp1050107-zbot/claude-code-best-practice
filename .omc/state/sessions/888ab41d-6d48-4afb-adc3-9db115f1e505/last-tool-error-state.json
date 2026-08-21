@@ -1,0 +1,7 @@
+{
+  "tool_name": "Read",
+  "tool_input_preview": "{\"file_path\":\"/Users/lz/claude-code-best-practice/changelog/agent-collections\"}",
+  "error": "EISDIR: illegal operation on a directory, read '/Users/lz/claude-code-best-practice/changelog/agent-collections'",
+  "timestamp": "2026-08-21T12:36:57.609Z",
+  "retry_count": 1
+}

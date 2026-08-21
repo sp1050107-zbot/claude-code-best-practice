@@ -1,4 +1,6 @@
 {
+  "language": "zh-TW",
+  "outputLanguage": "chinese",
   "permissions": {
     "allow": [
       "Edit(*)",
