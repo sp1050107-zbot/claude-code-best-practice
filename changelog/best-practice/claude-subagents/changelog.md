@@ -928,9 +928,25 @@ No drift detected on the two tracked dimensions — all 16 frontmatter fields an
 
 ---
 
-## [2026-08-21 06:02 PM PKT] Claude Code v2.1.238
+## [2026-08-22 11:37 AM PKT] Claude Code v2.1.239
 
 | # | Priority | Type | Action | Status |
 |---|----------|------|--------|--------|
-| 1 | HIGH | New Agent | Add `claude` to Official Agents table — catch-all agent, default for background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07; no update available) |
-| 2 | HIGH | New Agent | Add `fork` to Official Agents table — inherits full parent conversation, system prompt, model, and message history; spawnable via `subagent_type: "fork"` or `/subtask` (model: inherits, tools: same as parent) | ✋ ON HOLD (awaiting user approval — CONFIRMED in v2.1.232; prior invalidation on 2026-08-20 was a false alarm) |
+| 1 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-08-23 11:38 AM PKT] Claude Code v2.1.241
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+
+---
+
+## [2026-08-24 11:37 AM PKT] Claude Code v2.1.241
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Agent | Add `claude` to Official Claude Agents table — catch-all agent used when no specialized agent fits; also the default for dispatched background sessions (model: inherits, tools: all) | ✋ ON HOLD (awaiting user approval — RECURRING since 2026-08-07) |
+| 2 | HIGH | New Agent | Add `fork` to Official Claude Agents table — inherits full parent conversation, system prompt, model, and message history; enabled by default in interactive sessions; requested via Agent tool or `/subtask` (model: same as main session, tools: same as main session) | ✋ ON HOLD (NEW — previously INVALID on 2026-08-20 when not found in docs; now confirmed in official docs as of v2.1.241; official docs list 7 agents total) |

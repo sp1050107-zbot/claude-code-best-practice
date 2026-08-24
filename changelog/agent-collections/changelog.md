@@ -10,6 +10,42 @@ Tracks updates to the AGENT COLLECTIONS table in `README.md`.
 
 ---
 
+## [2026-08-24 08:43 AM PKT] Agent Collections Update
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Star | msitarzewski/agency-agents ★ 147k → 148k (HTML scrape: "Star 148k"; GitHub API inaccessible; conf 0.55) | INVALID (conf 0.55 below 0.88 threshold; HTML-only extraction; API inaccessible; Aug 23 API-confirmed 147,388; 148k requires ~612 more stars from that baseline — plausible at ~171 stars/day growth but unverifiable; RECURRING) |
+| 2 | LOW | Count | msitarzewski/agency-agents agents unchanged (270 = 270; same per-dir breakdown as prior COMPLETE Aug 14) | INVALID (no change; RECURRING) |
+| 3 | LOW | Star | VoltAgent/awesome-claude-code-subagents ★ unchanged (24.6k rounds to 25k; no k-boundary crossed) | INVALID (no change; RECURRING) |
+| 4 | LOW | Count | VoltAgent/awesome-claude-code-subagents agents 158 → 162 (README table 162; Aug 12 PRs #296 #299 #305 added agents; conf 0.85) | INVALID (RECURRING oscillation; conf 0.85 below 0.88 threshold; 2 of 4 purported additions [email-deliverability, landing-page-copywriter] appear already counted in Aug 13 COMPLETE [156→158]; remaining net +2 within ±2 oscillation; 11th+ consecutive INVALID ruling for VoltAgent count; no change) |
+| 5 | LOW | Sort | Verify sort order (147k > 25k — stars descending) | COMPLETE (order preserved; RECURRING) |
+
+---
+
+## [2026-08-23 08:45 AM PKT] Agent Collections Update
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Count | msitarzewski/agency-agents agents 270→286 (+16; code search total .md 330 − 44 non-agent = 286; engineering/ + specialized/ + marketing/ + 14 other division dirs; strategy/ and integrations/ excluded; conf 0.91) | INVALID (RECURRING oscillation; within documented band 254-292; methodology variance — total-minus-excluded vs per-dir enumeration; same oscillation as Jul 25 287 which was later reverted; no change) |
+| 2 | LOW | Count | VoltAgent/awesome-claude-code-subagents agents 158→149 (−9; code search total .md 167 − 18 non-agent = 149; Aug 12 PR #308 ground meta-orchestration quality fix; conf 0.93) | INVALID (RECURRING oscillation; PR #308 previously ruled content edits not file deletions on Aug 22 run; −9 below documented oscillation floor 150; 10th+ consecutive INVALID for VoltAgent count decrease; no change) |
+| 3 | LOW | Star | msitarzewski/agency-agents ★ unchanged (147k = 147,388) | INVALID (no k-boundary crossed; conf 0.91; RECURRING) |
+| 4 | LOW | Star | VoltAgent/awesome-claude-code-subagents ★ unchanged (25k = 24,552) | INVALID (no k-boundary crossed; RECURRING) |
+| 5 | LOW | Sort | Verify sort order (147k > 25k — stars descending) | COMPLETE (order preserved; RECURRING) |
+
+---
+
+## [2026-08-22 08:43 AM PKT] Agent Collections Update
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Star | Update msitarzewski/agency-agents ★ from 146k to 147k | COMPLETE (GitHub API: 147,217 exact; crosses k-boundary; RECURRING — milestone crossing; conf 0.82) |
+| 2 | HIGH | Star | Update VoltAgent/awesome-claude-code-subagents ★ from 24k to 25k | COMPLETE (GitHub API: 24,530 exact; 24.530k crosses .5 boundary → rounds to 25k; RECURRING — milestone crossing; conf 0.91) |
+| 3 | LOW | Count | msitarzewski/agency-agents agents 270 → 255 (−15; per-dir verified: engineering/58 + specialized/57 + marketing/36 + gis/13 + security/12 + design/10 + sales/9 + testing/9 + paid-media/7 + project-management/7 + academic/6 + support/6 + spatial-computing/6 + game-development/6 + finance/5 + product/5 + healthcare/3 = 255; conf 0.82; integrations/ and strategy/ excluded) | INVALID (RECURRING oscillation; conf 0.82 below 0.88 threshold; within oscillation band 254-292; game-development possibly 6 vs 21 (subdir counting uncertainty); no change) |
+| 4 | LOW | Count | VoltAgent/awesome-claude-code-subagents agents 158 → 159 (+1; per-category: core-dev/12 + lang-specialists/30 + infra/16 + quality-security/17 + data-ai/13 + devex/16 + specialized/16 + biz-product/17 + meta-orchestration/11 + research/11 = 159; conf 0.91; tools/subagent-catalog/ excluded) | INVALID (RECURRING ±1 oscillation; 9th+ consecutive INVALID ruling for VoltAgent count; repo self-describes "158+"; +1 within oscillation threshold; no change) |
+| 5 | LOW | Sort | Verify sort order (147k > 25k — stars descending) | COMPLETE (order preserved; RECURRING) |
+
+---
+
 ## [2026-08-16 08:43 AM PKT] Agent Collections Update
 
 | # | Priority | Type | Action | Status |
