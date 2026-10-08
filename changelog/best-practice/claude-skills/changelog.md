@@ -793,3 +793,527 @@ No new drift detected — frontmatter fields (20) and bundled skills (15) are fu
 |---|----------|------|--------|--------|
 | 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference has no separate [Skill] marker for `/review`; official skills docs explicitly state `/review` was "a separate command" before v2.1.223, confirming alias-only status; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 15→14 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
 | 2 | MED | Potential Removed Skill | `security-review` (row 15) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.232–v2.1.241) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-08-25 10:08 AM PKT] Claude Code v2.1.241
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no `[Skill]` marker for `/review`; docs classify it as "Alias of `/code-review`"; changelog v2.1.233 groups it as a "bundled skill alias" (not a distinct bundled skill); row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 13 bundled skills. Count should update 15→14 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no `[Skill]` marker; official docs list 13 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in v2.1.232–v2.1.241 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+
+---
+
+## [2026-08-26 10:27 AM PKT] Claude Code v2.1.246
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference has no separate [Skill] marker for `/review`; docs explicitly state "Before v2.1.223, `/review` was a separate command"; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 13 bundled skills. Count should update 15→14 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a bundled skill; commands reference carries no [Skill] marker; official docs list 13 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in v2.1.235–v2.1.246 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+
+---
+
+## [2026-08-27 10:05 AM PKT] Claude Code v2.1.247
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference has no separate [Skill] marker for `/review`; docs note "a `code-review` skill in `.claude/skills/` replaces the bundled `/code-review`, and the alias `/review` never runs your skill"; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 13 bundled skills. Count should update 15→14 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) — not marked [Skill] in commands reference; official docs list 13 bundled skills (excludes both `review` and `security-review`); skill remains Skill-tool-invocable in live session; no changelog corroboration of removal in v2.1.236–v2.1.247 | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-08-28 10:08 AM PKT] Claude Code v2.1.250
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | LOW | Potential New Skill | `workflow-authoring` added in v2.1.248 — ships with Claude Code but carries no `**[Skill]**` marker in the commands reference and is not user-invocable; loaded as internal reference material only | ❌ INVALID (no [Skill] marker in commands reference; not a bundled skill per official criteria — correctly absent from bundled skills table) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference has no separate [Skill] marker for `/review`; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 13 bundled skills. Count should update 15→14 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 15) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.240–v2.1.250) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-08-29 10:02 AM PKT] Claude Code v2.1.251
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `workflow-authoring` to official bundled skills table — loads the reference for writing dynamic workflow scripts (script API, resume behavior, quality patterns, worked examples); available only when dynamic workflows are enabled; confirmed `[Skill]`-marked in commands reference as of v2.1.251; introduced v2.1.248. Count updated 15→16 | ✅ COMPLETE (added as row 16, count updated 15→16) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference has no separate [Skill] marker for `/review`; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count would update 16→15 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 15) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.241–v2.1.251) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-08-30 10:06 AM PKT] Claude Code v2.1.251
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs explicitly document it as "Alias of `/code-review`"; changelog v2.1.223 announced the change; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 14 bundled skills. Count should update 16→15 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) — commands reference carries no [Skill] marker; official skills docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; official docs list 14 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in last 10 versions (v2.1.241–v2.1.251) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-08-31 10:08 AM PKT] Claude Code v2.1.251
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 14) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "typing the bundled alias `/review` never runs your skill"; changelog v2.1.223 announced "Changed `/review` to be an alias of `/code-review`"; row 14 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 14 bundled skills. Count should update 16→15 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 15) — not marked [Skill] in commands reference; official docs list 14 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in last 10 versions (v2.1.239–v2.1.251) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-09-01 10:03 AM PKT] Claude Code v2.1.252
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `design` to official bundled skills table — draft UI mockups, screen flows, landing pages, or posters as artboards on one canvas, published as an artifact running a research preview of Claude Design's editor; where saving is enabled artboards are edited on the canvas; otherwise view-and-export as PNG or PDF; requires a session where artifacts are available; available on Anthropic API only (unavailable on Bedrock, Google Cloud Agent Platform, Microsoft Foundry). Introduced v2.1.234. Count updated 16→17 | ✅ COMPLETE (added as row 11, design-sync shifted to row 12, remaining rows renumbered; count updated 16→17) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15, renumbered from 14) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs explicitly state "typing the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 15 bundled skills. Count should update 17→16 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16, renumbered from 15) — not marked [Skill] in commands reference; official skills docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.242–v2.1.252) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing) |
+
+---
+
+## [2026-09-02 10:04 AM PKT] Claude Code v2.1.258
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 17 vs 15 in official docs — difference accounted for by two recurring ON HOLD removals below.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; official skills docs state "typing the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 15 bundled skills. Count should update 17→16 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.243–v2.1.258) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-03 10:05 AM PKT] Claude Code v2.1.259
+
+Frontmatter fields (20) fully synchronized with official docs. Added 2 missing bundled skills (`design`, `workflow-authoring`) confirmed in official docs; 2 recurring ON HOLD removal items remain.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `design` to official bundled skills table — draft UI mockups, screen flows, landing pages, or posters as artboards on one canvas, published as an artifact running a research preview of Claude Design's editor; where saving is enabled artboards are edited on the canvas; otherwise view-and-export as PNG or PDF; requires a session where artifacts are available; available on Anthropic API only (unavailable on Bedrock, Google Cloud Agent Platform, Microsoft Foundry). Introduced v2.1.234. Count updated 15→17 | ✅ COMPLETE (added as row 11, design-sync shifted to row 12, remaining rows renumbered; count updated 15→17) |
+| 2 | HIGH | New Skill | Add `workflow-authoring` to official bundled skills table — load the reference for writing dynamic workflow scripts: script API, resume behavior, quality patterns, and worked examples; Claude normally loads it on its own before writing a script; available only when dynamic workflows are enabled; introduced v2.1.248. Count updated 15→17 | ✅ COMPLETE (added as row 17, count updated 15→17) |
+| 3 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs explicitly state "typing the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 15 bundled skills. Count should update 17→16 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 4 | MED | Potential Removed Skill | `security-review` (row 16) — official skills docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.249–v2.1.259) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-04 10:05 AM PKT] Claude Code v2.1.260
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 17 vs 15 in official docs — difference accounted for by two recurring ON HOLD removals below.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs commands table states "Alias of `/code-review`… Before v2.1.223, `/review` was a separate command that ran a single-pass, read-only review of a GitHub pull request by number"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 15 bundled skills. Count should update 17→16 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs list 15 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in last 10 versions (v2.1.246–v2.1.260); may be a docs-side omission rather than a product removal | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-05 10:05 AM PKT] Claude Code v2.1.261
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 17 vs 15 in official docs — difference accounted for by two recurring ON HOLD removals below. Note: `/skill-doctor` added in v2.1.261 is a built-in command (untagged in commands reference), not a bundled skill — correctly absent from the table.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "Alias of `/code-review`… Before v2.1.223, `/review` was a separate command that ran a single-pass, read-only review of a GitHub pull request"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 15 bundled skills. Count should update 17→16 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not tagged [Skill] in commands reference; official docs classify it as a "built-in command reachable through the Skill tool" (same category as `/init`), not a distinct bundled skill; official docs list 15 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in last 10 versions (v2.1.247–v2.1.261) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-06 10:05 AM PKT] Claude Code v2.1.263
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 17 vs 15 in official docs — difference accounted for by two recurring ON HOLD removals below. No new bundled skills or frontmatter fields in v2.1.262–v2.1.263.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; commands reference row explicitly reads "Alias of `/code-review`… takes the same effort levels and flags"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 15 bundled skills. Count should update 17→16 | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; official docs list 15 bundled skills (excludes both `review` and `security-review`); no changelog corroboration of removal in last 10 versions (v2.1.254–v2.1.263); still appears in live session skill listings | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-07 10:05 AM PKT] Claude Code v2.1.263
+
+New bundled skill detected: `skill-doctor` (v2.1.261) — added to bundled skills table. Frontmatter fields (20) remain fully synchronized. Note: today's research agent confirms `skill-doctor` carries the [Skill] marker in the commands reference, superseding the 2026-09-05 run's INVALID classification. Two recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `skill-doctor` to official bundled skills table — reports which loaded skills go unused and what each costs in context, so you can prune them; confirmed [Skill]-tagged in commands reference; introduced v2.1.261. Count updated 17→18 | ✅ COMPLETE (added as row 18, count updated 17→18) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; commands reference row reads "Alias of `/code-review`… takes the same effort levels and flags"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Official docs list 18 bundled skills. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.254–v2.1.263); still appears in live session skill listings | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-08 10:05 AM PKT] Claude Code v2.1.263
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 18; official docs confirmed 15 (3 unverifiable due to commands-reference page truncation — `simplify`, `review`, `security-review` fell in truncated sections; absence from truncated fetch is not evidence of removal). No new bundled skills or frontmatter fields in v2.1.263.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "Before v2.1.223, `/review` was a separate command that ran a single-pass, read-only review of a GitHub pull request by number"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.247–v2.1.263); still appears in live session skill listings | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-09 10:08 AM PKT] Claude Code v2.1.266
+
+No drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. Latest version v2.1.266 (versions v2.1.264–v2.1.266 contain no new bundled skills or frontmatter fields).
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "Before v2.1.223, `/review` was a separate command that ran a single-pass, read-only review of a GitHub pull request by number"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.257–v2.1.266); still appears in live session skill listings | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-10 10:03 AM PKT] Claude Code v2.1.267
+
+No drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.267 (changelog shows only an `effort:` frontmatter bug fix on an already-documented field).
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "Before v2.1.223, `/review` was a separate command that ran a single-pass, read-only review of a GitHub pull request by number"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.258–v2.1.267); still appears in live session skill listings | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-11 10:03 AM PKT] Claude Code v2.1.268
+
+No drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.268.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs list it as "Review code changes (alias: `/review`)" under `code-review`, confirming alias-only status; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.259–v2.1.268); still appears in live session skill listings | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-12 10:02 AM PKT] Claude Code v2.1.269
+
+No drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.269 (changelog shows only `claude plugin eval`, `/output-style` command, `/focus` spinner tip, and terminal/session/permission fixes — none skills-related).
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; official docs now explicitly state "the bundled alias `/review` never runs your skill" and list a single bundled row: `/code-review — Code review skill (has /review alias)`; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.260–v2.1.269) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-13 10:04 AM PKT] Claude Code v2.1.270
+
+No drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new frontmatter fields or bundled skills in v2.1.259–v2.1.270; `skill-doctor` (v2.1.261) is already in row 18.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.261–v2.1.270) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-14 10:03 AM PKT] Claude Code v2.1.270
+
+No drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new frontmatter fields or bundled skills in v2.1.261–v2.1.270; changelog entries in this window contain only bug fixes and non-skills-related changes.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.261–v2.1.270) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-15 10:01 AM PKT] Claude Code v2.1.272
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 18 vs 15 confirmed in official commands reference — 2 recurring ON HOLD removals continue, plus 1 new potential removal flagged for `skill-doctor`.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "Before v2.1.223, `/review` was a separate command that ran a single-pass, read-only review of a GitHub pull request by number"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs classify it as a built-in command reachable via the Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.263–v2.1.272) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — not marked [Skill] in commands reference as of today; official docs say "Requires Claude Code v2.1.252 or later and feature-flag fetching" (contradicts CHANGELOG v2.1.261 add date); no changelog corroboration of removal in last 10 versions (v2.1.263–v2.1.272); may be a docs-side omission rather than a product removal | ✋ ON HOLD (NEW finding; autonomous run cannot remove without human review; contradicts 2026-09-07 confirmation — requires human review before removing or reclassifying) |
+
+---
+
+## [2026-09-16 10:05 AM PKT] Claude Code v2.1.273
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 18 vs 15 confirmed in official commands reference — 3 recurring ON HOLD removals continue; no new additive changes detected.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs explicitly state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.264–v2.1.273) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not mark it [Skill]; official docs list 15 bundled skills (excludes `review`, `security-review`, and `skill-doctor`); no changelog corroboration of removal in last 10 versions (v2.1.264–v2.1.273); may be a docs-side omission rather than a product removal | ✋ ON HOLD (recurring from 2026-09-15; autonomous run cannot remove without human review) |
+
+---
+
+## [2026-09-17 10:02 AM PKT] Claude Code v2.1.274
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 18; official commands reference confirms 17 [Skill]-marked skills (difference accounted for by 1 recurring ON HOLD removal: `review`). Today's research agent cross-validated across four fetches and explicitly confirms `security-review` and `skill-doctor` as part of the 17 — both recurring ON HOLD findings resolved as INVALID.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Resolved ON HOLD | `security-review` (row 16) — recurring ON HOLD from 2026-07-30: today's research agent cross-validated across four fetches and explicitly lists `security-review` as one of 17 confirmed [Skill]-marked bundled skills; the "built-in command reachable via Skill tool" classification from previous docs fetches was a docs-side rendering inconsistency | ❌ INVALID (confirmed bundled — `security-review` is in the official 17-skill [Skill]-marked list; row 16 is correct, no action needed) |
+| 3 | MED | Resolved ON HOLD | `skill-doctor` (row 18) — ON HOLD from 2026-09-15: today's research agent cross-validated across four fetches and explicitly lists `skill-doctor` as one of 17 confirmed [Skill]-marked bundled skills; the 2026-09-15/16 "not marked [Skill]" findings were docs-side rendering truncation artifacts | ❌ INVALID (confirmed bundled — `skill-doctor` is in the official 17-skill [Skill]-marked list; row 18 is correct, no action needed) |
+
+---
+
+## [2026-09-18 10:06 AM PKT] Claude Code v2.1.276
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 18; today's research agent confirms 15 [Skill]-marked skills in commands reference — 2 recurring ON HOLD removals continue, plus `skill-doctor` re-flagged (contradicts yesterday's INVALID resolution). No new bundled skills in v2.1.274–v2.1.276; skill-syncing from claude.ai accounts (v2.1.275) adds user-installed skills, not bundled ones.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.267–v2.1.276) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — today's research agent counts 15 [Skill]-marked bundled skills excluding `skill-doctor` (contradicting 2026-09-17 run which confirmed it among 17 [Skill]-marked skills); no changelog corroboration of removal in last 10 versions (v2.1.267–v2.1.276); persistent docs-rendering ambiguity across multiple runs | ✋ ON HOLD (re-flagged; contradicts 2026-09-17 INVALID resolution; recurring docs-rendering inconsistency requires human review) |
+
+---
+
+## [2026-09-19 10:02 AM PKT] Claude Code v2.1.278
+
+No new drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.269–v2.1.278 (skill-related changes in this window are behavior/sync/bugfix items only). Three recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 18→17 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — docs-rendering inconsistency: some fetches include it in the [Skill]-marked list (2026-09-17), others do not (2026-09-15/16/18); no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (re-flagged 2026-09-18; recurring docs-rendering inconsistency requires human review) |
+
+---
+
+## [2026-09-20 10:05 AM PKT] Claude Code v2.1.278
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: today's research agent cross-validated the commands reference and explicitly lists `review` as one of 18 [Skill]-marked rows (16 distinct after removing aliases `/checkup`→`/doctor` and `/proactive`→`/loop`); `review` is NOT flagged as alias — resolves the long-running ON HOLD from 2026-07-30. Two ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Resolved ON HOLD | `review` (row 15) — recurring ON HOLD from 2026-07-30: today's research agent explicitly lists `review` among 18 [Skill]-marked rows in commands reference and counts it among 16 distinct bundled skills; only `checkup` and `proactive` identified as aliases; `review` is not flagged as alias in this fetch | ❌ INVALID (today's research confirms `review` is [Skill]-marked and distinct; row 15 is correct, no removal needed; recurring ambiguity resolved) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — not marked [Skill] in commands reference; official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — not marked [Skill] in commands reference; docs classify it as built-in command; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278); persistent docs-rendering ambiguity across multiple runs | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-21 10:03 AM PKT] Claude Code v2.1.278
+
+No new drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.267–v2.1.278. Two recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 2 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering ambiguity persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-22 10:03 AM PKT] Claude Code v2.1.278
+
+No new drift detected — frontmatter fields (20) and bundled skills (18) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.269–v2.1.278. Two recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 2 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering ambiguity persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.269–v2.1.278) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-23 10:12 AM PKT] Claude Code v2.1.280
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `update-config` to official bundled skills table — configure the Claude Code harness via `settings.json`; describe any settings change (allow a command, set an env var, add a hook) and Claude edits the matching settings file; for simple options like theme or model, use `/config` instead. Count updated 18→19 | ✅ COMPLETE (added as row 19, count updated 18→19) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 19→18 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.271–v2.1.280) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — skills page lists it but commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.271–v2.1.280) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-24 10:13 AM PKT] Claude Code v2.1.281
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog mentions "the bundled artifact-design skill now asks Claude for plain, direct prose" but it is absent from the commands reference and appears to be model-invoked only (not user-typeable); needs human review before adding | ✋ ON HOLD (new finding; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 19→18 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.271–v2.1.281) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.271–v2.1.281) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-25 10:13 AM PKT] Claude Code v2.1.282
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 19; official docs confirm 16 [Skill]-marked skills — 4 recurring ON HOLD items continue; no new additive changes in v2.1.272–v2.1.282.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 19→18 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.272–v2.1.282) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.272–v2.1.282) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-26 10:12 AM PKT] Claude Code v2.1.283
+
+No new frontmatter drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 19; official docs confirm 16 [Skill]-marked skills — 4 recurring ON HOLD items continue; no new additive changes in v2.1.273–v2.1.283. Note: v2.1.283 added `/doctor prompt-audit` subcommand (not a new bundled skill) and reverted the v2.1.282 `claude-ai` name reservation; no bundled skills added or removed.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 19→18 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.273–v2.1.283) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.273–v2.1.283) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-27 10:12 AM PKT] Claude Code v2.1.283
+
+No new drift detected — frontmatter fields (20) and bundled skills (19 in report vs 16 in official docs) are unchanged from previous run. No new bundled skills or frontmatter fields in v2.1.273–v2.1.283. Four recurring ON HOLD items continue; no additive actions to auto-execute.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 19→18 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.273–v2.1.283) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.273–v2.1.283) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-28 10:21 AM PKT] Claude Code v2.1.283
+
+No new drift detected — frontmatter fields (20) and bundled skills (19 in report vs 16 in official docs) are unchanged from previous run. No new bundled skills or frontmatter fields in v2.1.273–v2.1.283. Four recurring ON HOLD items continue; no additive actions to auto-execute.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 19→18 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.273–v2.1.283) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.273–v2.1.283) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-29 10:14 AM PKT] Claude Code v2.1.284
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `slides` to official bundled skills table — make a new presentation as a Claude Slides artifact filled from a brief (e.g., `/slides a quarterly review for the sales team`); confirmed [Skill]-marked in commands reference as of v2.1.284. Count updated 19→20 | ✅ COMPLETE (added as row 20, count updated 19→20) |
+| 2 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 3 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 20→19 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 4 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.274–v2.1.284) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 5 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.274–v2.1.284) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-01 10:15 AM PKT] Claude Code v2.1.286
+
+No new drift detected — frontmatter fields (20) and bundled skills (20 official) are fully synchronized with official docs. Local report lists 23 bundled skills; 3-row difference accounted for by recurring ON HOLD items. No new bundled skills or frontmatter fields in v2.1.276–v2.1.286.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 23→22 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.276–v2.1.286) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.276–v2.1.286) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-09-30 10:12 AM PKT] Claude Code v2.1.285
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `artifact-capabilities` to official bundled skills table — loads the reference for the runtime capabilities a published artifact can use, such as calling connectors or offering a file download, including which ones your account has; Claude normally loads it on its own before building a page that uses one; available where artifacts are. Count updated 20→23 | ✅ COMPLETE (added as row 21, count updated 20→23) |
+| 2 | HIGH | New Skill | Add `artifact-diagramming` to official bundled skills table — loads diagramming guidance for artifacts: when a diagram helps, what to draw, and how to write inline SVG that stays legible in light and dark themes; Claude normally loads it on its own when a diagram would help in an artifact; requires v2.1.221+. Count updated 20→23 | ✅ COMPLETE (added as row 22, count updated 20→23) |
+| 3 | HIGH | New Skill | Add `claude-in-chrome` to official bundled skills table — has Claude carry out a task in your browser (test a page, fill a form, read console logs) through Claude in Chrome; available when Chrome integration is enabled (e.g. `claude --chrome`). Count updated 20→23 | ✅ COMPLETE (added as row 23, count updated 20→23) |
+| 4 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 5 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 23→22 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 6 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.276–v2.1.285) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 7 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.276–v2.1.285) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-02 10:16 AM PKT] Claude Code v2.1.287
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 23; official docs confirm 20 [Skill]-marked skills — 4 recurring ON HOLD items continue (1 potential addition, 3 potential removals); no new bundled skills or frontmatter fields in v2.1.278–v2.1.287.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 23→22 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.278–v2.1.287) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.278–v2.1.287) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-03 10:12 AM PKT] Claude Code v2.1.288
+
+No new drift detected — frontmatter fields (20) are fully synchronized with official docs. Bundled skills: local report lists 23; official docs confirm 20 [Skill]-marked skills — 4 recurring ON HOLD items continue (1 potential addition, 3 potential removals); no new bundled skills or frontmatter fields in v2.1.278–v2.1.288.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 23→22 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.278–v2.1.288) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.278–v2.1.288) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential New Skill | Add `artifact-design` to bundled skills table — v2.1.281 changelog explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; absent from commands reference and appears model-invoked only (not user-typeable via `/`); requires confirmation before adding | ✋ ON HOLD (recurring from 2026-09-24; artifact-design referenced as bundled in v2.1.281 changelog but absent from commands reference; awaiting human review before adding) |
+
+---
+
+## [2026-10-04 10:12 AM PKT] Claude Code v2.1.289
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `artifact-design` to official bundled skills table — changelog v2.1.281 explicitly states "the bundled artifact-design skill now asks Claude for plain, direct prose"; loads design guidance for artifact pages (layout, theming, sizing, prose style); confirmed present in active session skills list; Claude loads it automatically before building artifacts. Count updated 23→24 | ✅ COMPLETE (added as row 24, count updated 23→24) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 24→23 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.280–v2.1.289) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.280–v2.1.289) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-05 10:16 AM PKT] Claude Code v2.1.289
+
+No new drift detected — frontmatter fields (20) and bundled skills (24) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.280–v2.1.289. Three recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 24→23 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.280–v2.1.289) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.280–v2.1.289) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-07 10:13 AM PKT] Claude Code v2.1.292
+
+No new drift detected — frontmatter fields (20) and bundled skills (25) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.283–v2.1.292. Three recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 25→24 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.283–v2.1.292) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.283–v2.1.292) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-06 10:15 AM PKT] Claude Code v2.1.291
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | New Skill | Add `plugin-authoring` to official bundled skills table — make a mod (a live pane, band, status line, toast or hook inside Claude Code terminal or desktop Code tab), written as a plugin of function hooks that hot-reloads in the session; gives the one-line install command for sharing mods; improved in v2.1.290. Count updated 24→25 | ✅ COMPLETE (added as row 25, count updated 24→25) |
+| 2 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 25→24 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 3 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.282–v2.1.291) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 4 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.282–v2.1.291) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
+
+---
+
+## [2026-10-08 10:15 AM PKT] Claude Code v2.1.294
+
+No new drift detected — frontmatter fields (20) and bundled skills (25) are fully synchronized with official docs. No new bundled skills or frontmatter fields in v2.1.285–v2.1.294; skill-related changes in this window are behavior/sync/bugfix items only (skill description sync timing, `allowed-tools` fix, `name` length cap, `context: fork` stream fix, `verify` pre-commit wiring, `claude-api` Managed Agents examples). Three recurring ON HOLD removals continue.
+
+| # | Priority | Type | Action | Status |
+|---|----------|------|--------|--------|
+| 1 | HIGH | Removed Skill | Remove `review` (row 15) — confirmed alias of `/code-review` since v2.1.223; commands reference carries no separate [Skill] marker for `/review`; docs state "the bundled alias `/review` never runs your skill"; row 15 description still describes pre-v2.1.223 standalone fast-single-pass PR review behavior. Count should update 25→24 after removal | ✋ ON HOLD (recurring from 2026-07-30; autonomous run cannot remove without human review) |
+| 2 | MED | Potential Removed Skill | `security-review` (row 16) — official docs state "A few built-in commands are also available through the Skill tool, including `/init` and `/security-review`", classifying it as a built-in command reachable via Skill tool, not a distinct bundled skill; commands reference carries no [Skill] marker; no changelog corroboration of removal in last 10 versions (v2.1.285–v2.1.294) | ✋ ON HOLD (recurring from 2026-07-30; awaiting human review before removing or reclassifying) |
+| 3 | MED | Potential Removed Skill | `skill-doctor` (row 18) — commands reference does not consistently mark it [Skill]; docs-rendering inconsistency persists across multiple runs; no changelog corroboration of removal in last 10 versions (v2.1.285–v2.1.294) | ✋ ON HOLD (recurring from 2026-09-15; awaiting human review before removing or reclassifying) |
