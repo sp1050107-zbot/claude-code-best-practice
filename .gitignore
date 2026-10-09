@@ -7,3 +7,4 @@ plan/
 
 # Hook event logs may contain sensitive tool input data (file contents, command args)
 .claude/hooks/logs/
+.ua/
